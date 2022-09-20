@@ -41,7 +41,7 @@ void encrypt(char source[], char target[])
 	    i++;
 	}
 
-	target[i + 1] = '\0';
+	target[i] = '\0';
 
     /* return target;  */
 }
@@ -55,7 +55,7 @@ void decrypt(char source[], char target[])
             i++;
         }
         
-        target[i + 1] = '\0';
+        target[i] = '\0';
     
     /* return target;  */
 }
