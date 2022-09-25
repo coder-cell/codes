@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <conio.h>
 void encrypt(char source[], char target[]);
 void decrypt(char source[], char target[]);
 
@@ -7,8 +6,7 @@ int main()
 {
     char source[1024], target[1024];
     char input;
-    // clrscr();
-    printf("Enter your text but add one extra letter before your text : ");
+    printf("Enter your text : ");
     gets(source);
 
     // puts(source);
@@ -28,7 +26,6 @@ int main()
     {
 	printf("You have entered wrong letter : ");
     }
-    // getch();
     return 0;
 }
 
@@ -43,7 +40,6 @@ void encrypt(char source[], char target[])
 
 	target[i] = '\0';
 
-    /* return target;  */
 }
 
 void decrypt(char source[], char target[])
@@ -56,6 +52,4 @@ void decrypt(char source[], char target[])
         }
         
         target[i] = '\0';
-    
-    /* return target;  */
 }
